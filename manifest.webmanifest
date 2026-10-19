@@ -1,0 +1,16 @@
+{
+  "id":"./",
+  "name":"JokiSmart PriceDesk - Kalkulator Harga",
+  "short_name":"PriceDesk",
+  "description":"Kalkulator estimasi harga jasa JokiSmart, siap digunakan tanpa database.",
+  "start_url":"./",
+  "scope":"./",
+  "display":"standalone",
+  "background_color":"#f6f8fc",
+  "theme_color":"#0d2651",
+  "lang":"id",
+  "icons":[
+    {"src":"./icons/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"./icons/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}
