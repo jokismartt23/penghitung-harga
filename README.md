@@ -31,3 +31,7 @@ CATATAN: Github tidak otomatis menghapus file lama yang hilang pada revisi, hapu
 - Form tidak menyimpan data, hanya membuat pesan WhatsApp di browser pelanggan.
 - Alamat website/domain belum dipatok sehingga tidak mengklaim domain yang belum dimiliki.
 - FAQ dan layanan bisa diperbarui dengan mengedit teks di index.html.
+
+
+## Perbaikan logo Oktober 2026
+Gambar logo di navbar dan footer sudah ditanam langsung dalam `index.html` sebagai data URI, sehingga tetap tampil meskipun file logo di `assets/` tidak terunggah. File logo PNG tetap disertakan sebagai cadangan. Jika website sebelumnya sudah deploy, cukup unggah ulang `index.html` pada root repository GitHub dan Commit changes; Vercel akan membangun deployment baru bila integrasi Git aktif. Namun, file aset lain seperti portfolio dan testimonial tetap memerlukan folder `assets/` dalam repository.
