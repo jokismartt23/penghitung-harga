@@ -1,105 +1,135 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="#0d2651">
-  <meta name="description" content="Kalkulator estimasi harga layanan JokiSmart. Hitung harga berdasarkan layanan, kompleksitas, waktu kerja, dan deadline.">
-  <meta name="robots" content="noindex, nofollow">
-  <title>PriceDesk | JokiSmart</title>
-  <link rel="icon" type="image/svg+xml" href="./icons/favicon.svg">
-  <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="stylesheet" href="./styles.css">
-  <script defer src="./app.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#0C7FE8">
+  <meta name="description" content="Jokismartt menyediakan pendampingan tugas kuliah dan proyek teknis: analisis Excel, coding, laporan akuntansi, dan tugas politeknik. Lihat pekerjaan dan konsultasi lewat WhatsApp.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:site_name" content="Jokismartt">
+  <meta property="og:title" content="Jokismartt | Pendampingan Excel, Coding & Laporan">
+  <meta property="og:description" content="Bantuan untuk bagian teknis dari tugasmu. Lihat dokumentasi pekerjaan dan mulai konsultasi dengan brief yang jelas.">
+  <meta property="og:image" content="assets/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+  <title>Jokismartt | Jasa Pendampingan Excel, Coding & Akuntansi</title>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Jokismartt","description":"Layanan pendampingan akademik dan proyek teknis untuk Excel, pemrograman, laporan akuntansi, dan tugas politeknik.","telephone":"+62-822-8515-0571","availableLanguage":"Indonesian","sameAs":["https://www.instagram.com/jokismartt23/","https://wa.me/6282285150571"]}</script>
 </head>
 <body>
-<svg class="sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-  <symbol id="i-calc" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M8 6h8M8 10h2m4 0h2M8 14h2m4 0h2M8 18h2m4 0h2"/></symbol>
-  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6zM15 3v5h4M9 12h7M9 16h7"/></symbol>
-  <symbol id="i-ppt" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M12 17v4m-5 0h10M7 12l3-3 2 2 4-4"/></symbol>
-  <symbol id="i-data" viewBox="0 0 24 24"><path d="M4 20V4m0 16h17M8 16v-4m5 4V7m5 9v-7"/></symbol>
-  <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-13-3 16"/></symbol>
-  <symbol id="i-web" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c4 4 4 14 0 18M12 3c-4 4-4 14 0 18"/></symbol>
-  <symbol id="i-chip" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 9h6v6H9zM9 2v4m6-4v4M9 18v4m6-4v4M2 9h4M2 15h4m12-6h4m-4 6h4"/></symbol>
-  <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 2.3 6.7L21 11l-6.7 2.3L12 20l-2.3-6.7L3 11l6.7-2.3zM19 18v4m-2-2h4"/></symbol>
-  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/></symbol>
-  <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16M9 4v6M15 14v6"/></symbol>
-  <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 4h13a3 3 0 0 1 3 3v13H7a3 3 0 0 1-3-3zM4 16a3 3 0 0 1 3-3h13"/></symbol>
-  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
-  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
-  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></symbol>
-  <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16m-13 0 1 14h8l1-14M9 7V4h6v3m-4 4v6m3-6v6"/></symbol>
-  <symbol id="i-save" viewBox="0 0 24 24"><path d="M4 4h13l3 3v13H4zM8 4v6h8V4M8 20v-7h8v7"/></symbol>
-  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-8v.01"/></symbol>
-  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M8 3H6a2 2 0 0 0-2 2c0 8 7 15 15 15a2 2 0 0 0 2-2v-2l-5-2-2 2a12 12 0 0 1-6-6l2-2z"/></symbol>
-  <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
-  <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 11 9-8 9 8v10h-7v-7h-4v7H3z"/></symbol>
-  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 4v16M4 12h16"/></symbol>
-  <symbol id="i-minus" viewBox="0 0 24 24"><path d="M4 12h16"/></symbol>
-  <symbol id="i-print" viewBox="0 0 24 24"><path d="M6 9V3h12v6M6 17H4V9h16v8h-2M6 14h12v7H6z"/></symbol>
-</svg>
-<div class="app-shell">
-  <aside class="sidebar">
-    <a class="brand" href="#kalkulator" aria-label="Beranda JokiSmart PriceDesk">
-      <div class="brand-mark">J<span>●</span></div>
-      <span class="brand-name">JokiSmart<small>PRICE DESK</small></span>
-    </a>
-    <div class="sidebar-section-label">WORKSPACE</div>
-    <nav class="side-nav" aria-label="Navigasi">
-      <button class="nav-link active" data-view="kalkulator" type="button"><svg><use href="#i-calc"/></svg> Kalkulator <span class="nav-dot"></span></button>
-      <button class="nav-link" data-view="riwayat" type="button"><svg><use href="#i-book"/></svg> Riwayat Penawaran <span class="count-chip" id="historyCount">0</span></button>
-      <button class="nav-link" data-view="pengaturan" type="button"><svg><use href="#i-sliders"/></svg> Atur Tarif</button>
-    </nav>
-    <div class="sidebar-bottom">
-      <div class="side-help"><div class="help-symbol"><svg><use href="#i-spark"/></svg></div><b>Harga lebih terarah.</b><p>Hitung lebih cepat, lalu sesuaikan dengan kondisi setiap proyek.</p></div>
-      <div class="mini-profile"><div class="avatar">JS</div><div><b>Admin JokiSmart</b><small>Internal pricing tool</small></div><span class="online-dot"></span></div>
+  <a class="skip-link" href="#konten">Lewati ke konten</a>
+  <div class="announcement-bar">
+    <div class="shell announcement-inner">
+      <span>Excel, koding, atau laporan? Ceritakan kebutuhanmu.</span>
+      <a href="https://wa.me/6282285150571?text=Halo%20Jokismartt%2C%20saya%20ingin%20bertanya." target="_blank" rel="noopener noreferrer">Chat via WhatsApp <span aria-hidden="true">↗</span></a>
     </div>
-  </aside>
-  <main class="main">
-    <header class="topbar"><div class="breadcrumb"><span>Workspace</span><span class="slash">/</span><b id="pageBreadcrumb">Kalkulator Harga</b></div><div class="topbar-end"><span class="local-badge"><span></span> Offline Ready</span><a class="website-link" href="https://jokismartt23-4zon.vercel.app/" target="_blank" rel="noopener">Website JokiSmart <svg><use href="#i-arrow"/></svg></a></div></header>
-    <div class="content">
-      <section class="view active" id="view-kalkulator">
-        <div class="page-heading"><div class="eyebrow"><span class="eyebrow-line"></span> SMART PRICING TOOL <span class="version">V 1.0</span></div><h1>Tentukan harga dengan <em>lebih percaya diri.</em></h1><p>Pilih jenis pekerjaan, tingkat kesulitan, dan waktu pengerjaan. Rekomendasi harga langsung dihitung untuk kamu.</p></div>
-        <div class="intro-strip"><span class="intro-icon"><svg><use href="#i-spark"/></svg></span><div><b>Estimasi cepat, keputusan tetap di tanganmu.</b><span>Semua tarif di aplikasi ini adalah <strong>contoh awal</strong>. Ubah sesuai standar harga JokiSmart melalui menu Atur Tarif.</span></div><button class="strip-action" id="goSettings" type="button">Atur tarif <svg><use href="#i-arrow"/></svg></button></div>
-        <div class="work-grid">
-          <div class="input-panel">
-            <div class="panel-head"><span class="panel-icon"><svg><use href="#i-sliders"/></svg></span><div><h2>Detail Pekerjaan</h2><p>Isi kebutuhan untuk mendapatkan estimasi.</p></div><span class="step-indicator">01 / 03</span></div>
-            <div class="panel-body">
-              <div class="field-group"><div class="field-heading"><label>Pilih jenis layanan</label><span class="optional">Wajib</span></div><div class="services-grid" id="serviceGrid">
-                <button type="button" data-service="excel" class="service-option active" aria-pressed="true"><svg><use href="#i-calc"/></svg><span>Excel</span></button>
-                <button type="button" data-service="data" class="service-option" aria-pressed="false"><svg><use href="#i-data"/></svg><span>Olah Data</span></button>
-                <button type="button" data-service="makalah" class="service-option" aria-pressed="false"><svg><use href="#i-doc"/></svg><span>Makalah</span></button>
-                <button type="button" data-service="ppt" class="service-option" aria-pressed="false"><svg><use href="#i-ppt"/></svg><span>Presentasi</span></button>
-                <button type="button" data-service="coding" class="service-option" aria-pressed="false"><svg><use href="#i-code"/></svg><span>Coding</span></button>
-                <button type="button" data-service="web" class="service-option" aria-pressed="false"><svg><use href="#i-web"/></svg><span>Website</span></button>
-                <button type="button" data-service="iot" class="service-option" aria-pressed="false"><svg><use href="#i-chip"/></svg><span>IoT</span></button>
-                <button type="button" data-service="lainnya" class="service-option" aria-pressed="false"><svg><use href="#i-spark"/></svg><span>Lainnya</span></button>
-              </div></div>
-              <div class="panel-divider"></div>
-              <div class="field-group"><div class="field-heading"><label>Tingkat kesulitan</label><span class="help-text">Pilih sesuai kompleksitas</span></div><div class="difficulty-options" id="difficultyOptions"><button type="button" data-difficulty="mudah" aria-pressed="false">Mudah</button><button type="button" data-difficulty="sedang" aria-pressed="true" class="active">Sedang</button><button type="button" data-difficulty="sulit" aria-pressed="false">Sulit</button><button type="button" data-difficulty="sangat" aria-pressed="false">Sangat Sulit</button></div><p class="field-hint" id="difficultyHint">Butuh penyesuaian, pengerjaan terstruktur, dan pemeriksaan hasil.</p></div>
-              <div class="form-two">
-                <div class="field-group"><div class="field-heading"><label for="quantity">Volume pekerjaan</label></div><div class="quantity-control"><button type="button" id="decreaseQty" aria-label="Kurangi jumlah"><svg><use href="#i-minus"/></svg></button><input type="number" inputmode="numeric" id="quantity" min="1" max="200" step="1" value="2"><button type="button" id="increaseQty" aria-label="Tambah jumlah"><svg><use href="#i-plus"/></svg></button><span id="unitLabel">sheet</span></div></div>
-                <div class="field-group"><div class="field-heading"><label for="deadline">Batas waktu / deadline</label></div><div class="select-wrap"><select id="deadline"><option value="336">14 hari atau lebih</option><option value="168" selected>7 hari</option><option value="120">5 hari</option><option value="72">3 hari</option><option value="48">2 hari</option><option value="24">24 jam</option><option value="12">12 jam</option><option value="6">6 jam</option></select><svg><use href="#i-chevron"/></svg></div></div>
-              </div>
-              <div class="effort-block"><div class="effort-row"><div class="effort-head"><span class="effort-circle"><svg><use href="#i-clock"/></svg></span><div><b>Estimasi waktu kerja</b><small id="autoHoursLabel">Dihitung otomatis sesuai pekerjaan</small></div></div><label class="switch"><input type="checkbox" id="manualEffort" aria-label="Atur jam kerja manual"><span class="switch-ui"></span></label></div><div id="manualHoursWrap" class="manual-hours" hidden><label for="manualHours">Perkiraan jam kerja manual</label><input type="number" id="manualHours" value="3" min="0.5" max="500" step="0.5"><span>jam</span></div><div class="effort-note">Aktifkan tombol jika kamu sudah tahu berapa jam pekerjaan akan selesai.</div></div>
-              <details class="advanced"><summary>Biaya tambahan & diskon <svg><use href="#i-chevron"/></svg></summary><div class="advanced-fields"><div class="field-group"><label for="extraCost">Biaya tambahan (Rp)</label><input type="number" id="extraCost" min="0" max="100000000" value="0" step="5000"><small>Contoh: hosting, lisensi, atau transportasi.</small></div><div class="field-group"><label for="discount">Diskon (%)</label><input type="number" id="discount" min="0" max="50" value="0" step="1"><small>Diskon maksimal 50%.</small></div><div class="field-group"><label for="dpRate">Uang muka / DP</label><div class="select-wrap"><select id="dpRate"><option value="30">30%</option><option value="50" selected>50%</option><option value="70">70%</option></select><svg><use href="#i-chevron"/></svg></div></div></div></details>
-              <button type="button" class="reset-btn" id="resetCalc">Reset perhitungan <span>↺</span></button>
-            </div>
+  </div>
+  <header class="site-header" id="siteHeader">
+    <div class="shell nav-shell">
+      <a class="brand" href="#beranda" aria-label="Jokismartt, ke beranda">
+        <img class="brand-logo" src="assets/jokismartt-logo.png" alt="JOKI SMART · Terima Jasa Joki Tugas" width="260" height="97">
+      </a>
+      <nav class="nav-links" id="navigation" aria-label="Navigasi utama">
+        <a href="#layanan">Layanan</a>
+        <a href="#pekerjaan">Portofolio</a>
+        <a href="#ulasan">Dokumentasi</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#tanya-jawab">FAQ</a>
+      </nav>
+      <div class="nav-controls">
+        <a class="nav-action" href="https://wa.me/6282285150571?text=Halo%20Jokismartt%2C%20saya%20ingin%20konsultasi." target="_blank" rel="noopener noreferrer">Mulai konsultasi <span aria-hidden="true">↗</span></a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Buka menu" aria-controls="navigation" aria-expanded="false"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="konten">
+    <section id="beranda" class="hero-v2" aria-labelledby="hero-title">
+      <div class="shell hero-v2-grid">
+        <div class="hero-v2-copy">
+          <div class="hero-eyebrow"><span class="hero-line" aria-hidden="true"></span> EXCEL / CODING / AKUNTANSI / TEKNIK</div>
+          <h1 id="hero-title">Bantu tugas kuliah,<br>coding, dan <span>olah data</span><br>yang rapi.</h1>
+          <p>Butuh bantuan memeriksa rumus Excel, membahas kode, atau merapikan laporan? Kirim kebutuhanmu. Kami bantu tentukan langkah dan ruang lingkupnya.</p>
+          <div class="hero-v2-actions">
+            <a class="hero-v2-primary" href="https://wa.me/6282285150571?text=Halo%20Jokismartt%2C%20saya%20ingin%20konsultasi%20mengenai%20tugas." target="_blank" rel="noopener noreferrer"><span aria-hidden="true">↗</span> Konsultasi via WhatsApp</a>
+            <a class="hero-v2-secondary" href="#pekerjaan">Lihat portofolio <span aria-hidden="true">→</span></a>
           </div>
-          <div class="results-col">
-            <div class="result-card"><div class="result-header"><span><svg><use href="#i-spark"/></svg> ESTIMASI PENAWARAN</span><span class="live-pill"><i></i> LIVE</span></div><div class="price-title">Rekomendasi harga</div><div class="price-number" id="recommendedPrice" aria-live="polite">Rp 0</div><div class="range-label">Rentang negosiasi wajar</div><div class="price-range" id="priceRange">Rp 0 – Rp 0</div><div class="result-rule"></div><div class="result-lines"><div><span>Waktu kerja estimasi</span><strong id="workHours">0 jam</strong></div><div><span>Tarif dasar per jam</span><strong id="hourlyRate">Rp 0</strong></div><div><span>Biaya pengerjaan</span><strong id="laborPrice">Rp 0</strong></div><div><span>Tambahan deadline</span><strong id="urgencyPrice">Rp 0</strong></div><div><span>Biaya lain / diskon</span><strong id="adjustments">Rp 0</strong></div></div><div class="deposit-box"><span><svg><use href="#i-check"/></svg> DP <span id="depositPercent">50%</span></span><strong id="depositAmount">Rp 0</strong></div><div class="deadline-warning" id="deadlineWarning" hidden><svg><use href="#i-info"/></svg><span>Estimasi jam kerja padat dibanding tenggat. Pastikan kapasitas pengerjaan sebelum memberi harga.</span></div><button type="button" class="primary-button" id="copyQuote"><svg><use href="#i-copy"/></svg> Salin penawaran harga</button><div class="result-actions"><button type="button" id="saveQuote"><svg><use href="#i-save"/></svg> Simpan riwayat</button><button type="button" id="sendWhatsapp"><svg><use href="#i-phone"/></svg> Kirim ke WA</button></div><p class="disclaimer">*Estimasi internal, bukan tarif final. Konfirmasi kebutuhan, revisi, dan tingkat risiko sebelum deal.</p></div>
-            <div class="guidance-card"><div class="guidance-icon"><svg><use href="#i-info"/></svg></div><div><b>Tips menetapkan harga</b><p>Gunakan estimasi sebagai titik awal. Tanyakan contoh hasil, jumlah revisi, dan detail output sebelum menyepakati penawaran.</p></div></div>
+          <div class="hero-v2-proofs" aria-label="Cara kami bekerja">
+            <div><span>01</span>Brief lebih dulu</div>
+            <div><span>02</span>Estimasi jelas</div>
+            <div><span>03</span>Hasil bisa ditinjau</div>
           </div>
         </div>
-        <div class="process-bar"><div><span class="process-step">01</span><span>Identifikasi kebutuhan</span></div><i></i><div><span class="process-step">02</span><span>Hitung waktu & biaya</span></div><i></i><div><span class="process-step">03</span><span>Kirim penawaran</span></div></div>
-      </section>
-      <section class="view" id="view-riwayat"><div class="page-heading"><div class="eyebrow"><span class="eyebrow-line"></span> PENAWARAN TERSIMPAN</div><h1>Riwayat <em>perhitungan.</em></h1><p>Pantau penawaran yang kamu simpan di perangkat ini. Tidak ada database atau sinkronisasi akun.</p></div><div class="simple-panel"><div class="history-head"><div><h2>Daftar estimasi</h2><p>Riwayat disimpan lokal pada browser yang digunakan.</p></div><button type="button" class="danger-button" id="clearHistory"><svg><use href="#i-trash"/></svg> Hapus semua</button></div><div id="historyList" class="history-list"></div></div></section>
-      <section class="view" id="view-pengaturan"><div class="page-heading"><div class="eyebrow"><span class="eyebrow-line"></span> PERSONALKAN TARIF</div><h1>Harga dasar <em>versi kamu.</em></h1><p>Ubah tarif per jam, estimasi waktu per unit, dan minimum order agar kalkulator sesuai kebutuhan JokiSmart.</p></div><div class="settings-banner"><svg><use href="#i-info"/></svg><span>Angka di bawah adalah tarif simulasi, bukan harga pasar yang telah diverifikasi. Perubahan tersimpan otomatis di browser ini saja.</span></div><div class="settings-grid" id="settingsGrid"></div><div class="settings-footer"><button type="button" class="secondary-button" id="resetRates">Kembalikan contoh awal</button><button type="button" class="primary-button" id="saveRates"><svg><use href="#i-save"/></svg> Simpan tarif</button></div></section>
-      <footer class="footer"><span>© <span id="year"></span> JokiSmart · PriceDesk</span><span>Dirancang untuk estimasi harga internal. <strong>Tanpa database.</strong></span></footer>
-    </div>
+        <div class="hero-v2-showcase" aria-label="Pratinjau pekerjaan Jokismartt">
+          <div class="showcase-backnote"><span>FILE / 001</span><span>JOKISMARTT ARCHIVE</span></div>
+          <div class="showcase-window">
+            <div class="showcase-toolbar"><div class="toolbar-dots" aria-hidden="true"><i></i><i></i><i></i></div><span>PROJECT REVIEW</span><span>EXCEL · 2026</span></div>
+            <div class="showcase-image"><img src="assets/portfolio/p-03.webp" alt="Contoh pekerjaan spreadsheet Excel dari arsip Jokismartt" width="1300" height="532" fetchpriority="high"></div>
+            <div class="showcase-bottom"><div><span>SELECTED WORK / 01</span><strong>Spreadsheet & analisis data</strong></div><a href="#pekerjaan" aria-label="Buka portofolio">↗</a></div>
+          </div>
+          <div class="showcase-sticker"><span class="sticker-index">MADE TO REVIEW / 2026</span><strong>Detail yang<br>mudah dicek.</strong><span class="sticker-arrow" aria-hidden="true">↗</span></div>
+          <div class="showcase-footer"><span>REAL WORK, NOT STOCK MOCKUPS</span><span>SCROLL TO EXPLORE ↓</span></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-label="Bidang layanan"><div class="shell ticker-inner"><span>EXCEL & DATA</span><span aria-hidden="true">✳</span><span>PEMROGRAMAN</span><span aria-hidden="true">✳</span><span>AKUNTANSI</span><span aria-hidden="true">✳</span><span>PROYEK TEKNIK</span><span aria-hidden="true">✳</span><span>PENDAMPINGAN LAPORAN</span></div></div>
+
+    <section id="layanan" class="section shell service-section" aria-labelledby="services-heading">
+      <div class="section-heading"><div><span class="kicker">01 / APA YANG KAMI BANTU</span><h2 id="services-heading">Satu kebutuhan.<br><em>Penanganan yang jelas.</em></h2></div><p>Setiap tugas punya konteksnya sendiri. Pilih bidang yang sesuai, lalu kirim soal atau brief untuk dibahas lebih lanjut.</p></div>
+      <div class="services-list">
+        <article class="service-row"><div class="service-no">01</div><div class="service-main"><h3>Excel & analisis data</h3><p>Rumus, pengolahan data, tabel, perencanaan produksi, visualisasi, dan dashboard sederhana.</p></div><div class="service-tags"><span>SPREADSHEET</span><span>FORMULA</span><span>DATA</span></div><a class="service-link" href="https://wa.me/6282285150571?text=Halo%20Jokismartt%2C%20saya%20ingin%20konsultasi%20Excel%20dan%20analisis%20data." target="_blank" rel="noopener noreferrer" aria-label="Konsultasi Excel dan analisis data">↗</a></article>
+        <article class="service-row"><div class="service-no">02</div><div class="service-main"><h3>Pemrograman & koding</h3><p>Diskusi logika program, debugging, Python, pengembangan website, dan dokumentasi teknis.</p></div><div class="service-tags"><span>PYTHON</span><span>WEB</span><span>DEBUGGING</span></div><a class="service-link" href="https://wa.me/6282285150571?text=Halo%20Jokismartt%2C%20saya%20ingin%20konsultasi%20pemrograman." target="_blank" rel="noopener noreferrer" aria-label="Konsultasi pemrograman">↗</a></article>
+        <article class="service-row"><div class="service-no">03</div><div class="service-main"><h3>Akuntansi & laporan keuangan</h3><p>Jurnal umum, buku besar, neraca saldo, worksheet, dan pengecekan konsistensi laporan.</p></div><div class="service-tags"><span>JURNAL</span><span>BUKU BESAR</span><span>NERACA</span></div><a class="service-link" href="https://wa.me/6282285150571?text=Halo%20Jokismartt%2C%20saya%20ingin%20konsultasi%20akuntansi%20dan%20laporan%20keuangan." target="_blank" rel="noopener noreferrer" aria-label="Konsultasi akuntansi">↗</a></article>
+        <article class="service-row"><div class="service-no">04</div><div class="service-main"><h3>Tugas teknik & politeknik</h3><p>Pengolahan data eksperimen, perhitungan, simulasi dasar, pembahasan teknis, dan pelaporan hasil.</p></div><div class="service-tags"><span>PERHITUNGAN</span><span>PROYEK</span></div><a class="service-link" href="https://wa.me/6282285150571?text=Halo%20Jokismartt%2C%20saya%20ingin%20konsultasi%20tugas%20teknik%20atau%20politeknik." target="_blank" rel="noopener noreferrer" aria-label="Konsultasi teknik dan politeknik">↗</a></article>
+        <article class="service-row"><div class="service-no">05</div><div class="service-main"><h3>Makalah, laporan & persiapan ujian</h3><p>Struktur penulisan, perbaikan format, pembahasan materi, latihan soal, dan peninjauan draf.</p></div><div class="service-tags"><span>REVIEW</span><span>FORMAT</span><span>LATIHAN</span></div><a class="service-link" href="https://wa.me/6282285150571?text=Halo%20Jokismartt%2C%20saya%20ingin%20konsultasi%20laporan%20atau%20persiapan%20ujian." target="_blank" rel="noopener noreferrer" aria-label="Konsultasi laporan dan persiapan ujian">↗</a></article>
+      </div>
+    </section>
+
+    <section id="pekerjaan" class="section portfolio-section" aria-labelledby="portfolio-heading">
+      <div class="shell"><div class="section-heading port-head"><div><span class="kicker">02 / WORK ARCHIVE</span><h2 id="portfolio-heading">Lihat detail<br><em>hasil pekerjaannya.</em></h2></div><p>Cuplikan dari arsip portofolio yang tersedia. Buka gambar untuk melihat struktur tabel, rumus, atau kode secara lebih dekat.</p></div>
+        <div class="filters" role="group" aria-label="Filter jenis portofolio"><button class="filter is-active" data-filter="all" type="button" aria-pressed="true">Semua <span>08</span></button><button class="filter" data-filter="excel" type="button" aria-pressed="false">Excel & Data</button><button class="filter" data-filter="akuntansi" type="button" aria-pressed="false">Akuntansi</button><button class="filter" data-filter="teknik" type="button" aria-pressed="false">Coding & Teknik</button></div>
+        <p class="sr-only" id="filterStatus" role="status" aria-live="polite">8 pekerjaan ditampilkan.</p>
+        <div class="portfolio-grid" id="portfolioGrid">
+          <button type="button" class="work-card work-feature" data-category="excel" data-img="assets/portfolio/p-03.webp" data-title="Perencanaan dan analisis spreadsheet" data-category-label="Excel & Data"><span class="work-figure"><img src="assets/portfolio/p-03.webp" alt="Cuplikan spreadsheet berisi tabel data dan ringkasan analisis" loading="lazy" width="1300" height="532"></span><span class="work-info"><span class="work-index">01 / EXCEL & DATA</span><span class="work-name">Perencanaan dan analisis spreadsheet</span><span class="work-open" aria-hidden="true">↗</span></span></button>
+          <button type="button" class="work-card" data-category="teknik" data-img="assets/portfolio/p-07.webp" data-title="Pemrograman dan pemeriksaan kode" data-category-label="Coding & Teknik"><span class="work-figure"><img src="assets/portfolio/p-07.webp" alt="Cuplikan kode program dalam editor" loading="lazy" width="1300" height="532"></span><span class="work-info"><span class="work-index">02 / CODING</span><span class="work-name">Pemrograman dan pemeriksaan kode</span><span class="work-open" aria-hidden="true">↗</span></span></button>
+          <button type="button" class="work-card" data-category="akuntansi" data-img="assets/portfolio/p-11.webp" data-title="Rekapitulasi data akuntansi" data-category-label="Akuntansi"><span class="work-figure"><img src="assets/portfolio/p-11.webp" alt="Cuplikan lembar kerja rekap akuntansi" loading="lazy" width="1300" height="532"></span><span class="work-info"><span class="work-index">03 / AKUNTANSI</span><span class="work-name">Rekapitulasi data akuntansi</span><span class="work-open" aria-hidden="true">↗</span></span></button>
+          <button type="button" class="work-card" data-category="excel" data-img="assets/portfolio/p-02.webp" data-title="Pengolahan tabel dan formula" data-category-label="Excel & Data"><span class="work-figure"><img src="assets/portfolio/p-02.webp" alt="Tabel spreadsheet dengan area hasil perhitungan yang ditandai" loading="lazy" width="1300" height="532"></span><span class="work-info"><span class="work-index">04 / EXCEL & DATA</span><span class="work-name">Pengolahan tabel dan formula</span><span class="work-open" aria-hidden="true">↗</span></span></button>
+          <button type="button" class="work-card" data-category="teknik" data-img="assets/portfolio/p-08.webp" data-title="Lembar perhitungan proyek teknis" data-category-label="Coding & Teknik"><span class="work-figure"><img src="assets/portfolio/p-08.webp" alt="Cuplikan lembar perhitungan teknis pada spreadsheet" loading="lazy" width="1300" height="532"></span><span class="work-info"><span class="work-index">05 / PROYEK TEKNIK</span><span class="work-name">Lembar perhitungan proyek teknis</span><span class="work-open" aria-hidden="true">↗</span></span></button>
+          <button type="button" class="work-card" data-category="akuntansi" data-img="assets/portfolio/p-19.webp" data-title="Pencatatan dan pengelompokan transaksi" data-category-label="Akuntansi"><span class="work-figure"><img src="assets/portfolio/p-19.webp" alt="Spreadsheet berwarna ungu berisi pencatatan transaksi" loading="lazy" width="1300" height="532"></span><span class="work-info"><span class="work-index">06 / AKUNTANSI</span><span class="work-name">Pencatatan dan pengelompokan transaksi</span><span class="work-open" aria-hidden="true">↗</span></span></button>
+          <button type="button" class="work-card" data-category="excel" data-img="assets/portfolio/p-16.webp" data-title="Tabulasi dan pengecekan data" data-category-label="Excel & Data"><span class="work-figure"><img src="assets/portfolio/p-16.webp" alt="Cuplikan tabel panjang dengan ringkasan data" loading="lazy" width="1300" height="532"></span><span class="work-info"><span class="work-index">07 / EXCEL & DATA</span><span class="work-name">Tabulasi dan pengecekan data</span><span class="work-open" aria-hidden="true">↗</span></span></button>
+          <button type="button" class="work-card" data-category="akuntansi" data-img="assets/portfolio/p-24.webp" data-title="Laporan dan ikhtisar keuangan" data-category-label="Akuntansi"><span class="work-figure"><img src="assets/portfolio/p-24.webp" alt="Cuplikan worksheet keuangan dengan kolom nominal" loading="lazy" width="1300" height="532"></span><span class="work-info"><span class="work-index">08 / AKUNTANSI</span><span class="work-name">Laporan dan ikhtisar keuangan</span><span class="work-open" aria-hidden="true">↗</span></span></button>
+        </div>
+        <div class="portfolio-after"><span class="mono">END OF SELECTED WORKS</span><a href="https://wa.me/6282285150571?text=Halo%20Jokismartt%2C%20apakah%20ada%20contoh%20pekerjaan%20lain%20yang%20sesuai%20kebutuhan%20saya%3F" target="_blank" rel="noopener noreferrer" class="text-link">Tanya contoh yang relevan <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section id="ulasan" class="section shell evidence-section" aria-labelledby="evidence-heading">
+      <div class="section-heading"><div><span class="kicker">03 / CONVERSATIONS & RECORDS</span><h2 id="evidence-heading">Percakapan &<br><em>dokumentasi.</em></h2></div><p>Arsip percakapan dan pembayaran yang menggambarkan komunikasi serta proses kerja kami.</p></div>
+      <div class="evidence-layout">
+        <div class="evidence-intro"><div class="evidence-symbol" aria-hidden="true">“</div><p>Komunikasi yang jelas membuat detail pekerjaan lebih mudah disepakati.</p><span class="mono">ARCHIVE / CONVERSATIONS</span></div>
+        <div class="evidence-panel"><div class="evidence-panel-top"><span class="mono">A / PERCAKAPAN</span><span class="mono">01—03</span></div><div class="chat-grid"><button class="evidence-image" type="button" data-img="assets/testimonials/chat-01.webp" data-title="Cuplikan percakapan 01"><img src="assets/testimonials/chat-01.webp" alt="Cuplikan percakapan pelanggan yang telah dipilih untuk dokumentasi" loading="lazy" width="760" height="854"></button><button class="evidence-image" type="button" data-img="assets/testimonials/chat-05.webp" data-title="Cuplikan percakapan 02"><img src="assets/testimonials/chat-05.webp" alt="Percakapan mengenai pekerjaan dan penyesuaian file" loading="lazy" width="760" height="395"></button><button class="evidence-image" type="button" data-img="assets/testimonials/chat-09.webp" data-title="Cuplikan percakapan 03"><img src="assets/testimonials/chat-09.webp" alt="Percakapan konfirmasi hasil" loading="lazy" width="760" height="147"></button></div></div>
+        <div class="evidence-panel evidence-payments"><div class="evidence-panel-top"><span class="mono">B / DOKUMENTASI TRANSAKSI</span><span class="mono">01—03</span></div><div class="payment-grid"><button class="evidence-image payment-image" type="button" data-img="assets/testimonials/payment-00.webp" data-title="Dokumentasi pembayaran 01"><img src="assets/testimonials/payment-00.webp" alt="Arsip transaksi yang telah disensor" loading="lazy" width="529" height="860"></button><button class="evidence-image payment-image" type="button" data-img="assets/testimonials/payment-05.webp" data-title="Dokumentasi pembayaran 02"><img src="assets/testimonials/payment-05.webp" alt="Arsip transaksi kedua yang telah disensor" loading="lazy" width="540" height="799"></button><button class="evidence-image payment-image" type="button" data-img="assets/testimonials/payment-11.webp" data-title="Dokumentasi pembayaran 03"><img src="assets/testimonials/payment-11.webp" alt="Arsip transaksi ketiga yang telah disensor" loading="lazy" width="529" height="860"></button></div></div>
+      </div>
+    </section>
+
+    <section class="section process-section" id="proses" aria-labelledby="process-heading"><div class="shell process-wrap"><div class="process-intro"><span class="kicker">04 / WORKFLOW</span><h2 id="process-heading">Dari brief<br>ke <em>hasil.</em></h2><p>Tidak perlu menebak prosesnya. Setiap tahap dibicarakan sebelum lanjut ke berikutnya.</p><a class="text-link" href="#konsultasi">Mulai dari brief <span aria-hidden="true">↗</span></a></div><ol class="process-steps"><li><span class="step-number">01</span><div><h3>Kirim kebutuhan</h3><p>Ceritakan tugas, kirim soal atau file melalui WhatsApp, dan sampaikan tenggat.</p></div></li><li><span class="step-number">02</span><div><h3>Review & estimasi</h3><p>Kami cek ruang lingkup, ketersediaan, biaya, dan alur kerja yang memungkinkan.</p></div></li><li><span class="step-number">03</span><div><h3>Konfirmasi pengerjaan</h3><p>Setelah sepakat, konfirmasi pesanan dan pembayaran awal sesuai kesepakatan.</p></div></li><li><span class="step-number">04</span><div><h3>Proses & peninjauan</h3><p>Pekerjaan disusun sesuai brief. Catatan perbaikan dibicarakan dengan jelas.</p></div></li><li><span class="step-number">05</span><div><h3>Serah terima</h3><p>Pelunasan sesuai kesepakatan, lalu file akhir dan penjelasan diserahkan.</p></div></li></ol></div></section>
+
+    <section id="tentang" class="section shell about-section" aria-labelledby="about-heading"><div class="about-left"><span class="kicker">05 / ABOUT THE STUDIO</span><h2 id="about-heading">Kami suka<br><em>yang terukur.</em></h2><p>Jokismartt berfokus pada kebutuhan akademik dan teknis yang memerlukan ketelitian. Mulai dari file spreadsheet hingga pembahasan kode dan laporan.</p><p>Kami mengutamakan komunikasi yang jelas, contoh kerja yang bisa ditinjau, dan ruang lingkup yang disepakati di awal.</p><div class="about-links"><a class="text-link" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/jokismartt23/">Instagram @jokismartt23 <span aria-hidden="true">↗</span></a></div></div><div class="about-statement"><span class="mono">WORKING PRINCIPLES / 03</span><div><span>01</span><p>Brief dulu, baru estimasi.</p></div><div><span>02</span><p>Fokus pada detail yang penting.</p></div><div><span>03</span><p>Review sebelum serah terima.</p></div><div class="statement-footer">JOKISMARTT <span aria-hidden="true">✳</span> WORK WITH CLARITY</div></div></section>
+
+    <section id="tanya-jawab" class="section shell faq-section" aria-labelledby="faq-heading"><div class="faq-head"><span class="kicker">06 / PERTANYAAN UMUM</span><h2 id="faq-heading">Sebelum<br><em>mulai bertanya.</em></h2></div><div class="faq-list"><details><summary>Apakah konsultasi awal berbayar? <span class="faq-icon" aria-hidden="true">+</span></summary><div class="faq-answer">Kamu bisa mengirim penjelasan singkat terlebih dahulu lewat WhatsApp. Estimasi biaya akan disampaikan setelah kebutuhan dan tingkat kesulitannya diperiksa.</div></details><details><summary>Bagaimana cara mengirim soal atau file? <span class="faq-icon" aria-hidden="true">+</span></summary><div class="faq-answer">Isi form singkat di halaman ini, lalu kirim pesan WhatsApp yang terbuka. Lampirkan file, foto soal, atau ketentuan tugas langsung di chat.</div></details><details><summary>Apakah bisa meminta revisi? <span class="faq-icon" aria-hidden="true">+</span></summary><div class="faq-answer">Bisa dibicarakan sebelum pemesanan. Ruang lingkup revisi mengikuti brief dan kesepakatan yang dibuat saat konsultasi.</div></details><details><summary>Apakah menerima tugas dengan tenggat dekat? <span class="faq-icon" aria-hidden="true">+</span></summary><div class="faq-answer">Ketersediaan bergantung pada jenis pekerjaan dan waktu yang tersisa. Cantumkan tenggat yang sebenarnya agar estimasi realistis.</div></details><details><summary>Apakah membantu persiapan ujian? <span class="faq-icon" aria-hidden="true">+</span></summary><div class="faq-answer">Kami dapat membantu pembahasan materi, latihan soal, dan persiapan teknis. Kami tidak mengikuti ujian atau mengaku sebagai peserta atas nama pelanggan.</div></details></div></section>
+
+    <section id="konsultasi" class="contact-section" aria-labelledby="contact-heading"><div class="shell contact-layout"><div class="contact-left"><span class="kicker">07 / START A CONVERSATION</span><h2 id="contact-heading">Ada yang perlu<br><em>dibahas?</em></h2><p>Ceritakan kebutuhanmu. Form ini tidak menyimpan data ke server. Informasinya hanya disusun menjadi pesan WhatsApp agar lebih mudah dibahas.</p><div class="contact-direct"><span class="mono">ATAU HUBUNGI LANGSUNG</span><a href="https://wa.me/6282285150571" target="_blank" rel="noopener noreferrer">0822 8515 0571 <span aria-hidden="true">↗</span></a><a href="https://www.instagram.com/jokismartt23/" target="_blank" rel="noopener noreferrer">@jokismartt23 <span aria-hidden="true">↗</span></a></div></div><form class="contact-form" id="orderForm"><div class="form-head"><span class="mono">PROJECT INQUIRY</span><span class="mono">FORM / 01</span></div><label for="orderName">Nama panggilan <span class="required">*</span></label><input id="orderName" name="nama" type="text" placeholder="Contoh: Raka" maxlength="60" autocomplete="given-name" required><label for="orderService">Bidang yang dibutuhkan <span class="required">*</span></label><select id="orderService" name="layanan" required><option value="" selected disabled>Pilih jenis layanan</option><option>Excel & analisis data</option><option>Pemrograman & koding</option><option>Akuntansi & laporan keuangan</option><option>Tugas teknik & politeknik</option><option>Makalah, laporan & persiapan ujian</option><option>Lainnya / perlu diskusi</option></select><label for="orderDeadline">Tenggat (opsional)</label><input id="orderDeadline" name="deadline" type="date"><label for="orderDetails">Ringkasan kebutuhan <span class="required">*</span></label><textarea id="orderDetails" name="detail" rows="4" minlength="15" maxlength="1500" placeholder="Contoh: saya perlu bantuan meninjau rumus perencanaan produksi di Excel, file ada 3 sheet..." required></textarea><button class="button button-dark submit-button" type="submit">Susun pesan & buka WhatsApp <span aria-hidden="true">↗</span></button><p class="form-note">Form akan membuka WhatsApp. Tidak ada data yang disimpan di website ini.</p></form></div></section>
   </main>
-</div>
-<div class="toast" id="toast" role="status" aria-live="polite"></div>
-<div class="print-only" id="printSheet"></div>
+  <footer class="footer"><div class="shell"><div class="footer-main"><div class="footer-brand"><a href="#beranda" aria-label="JOKI SMART, kembali ke beranda"><img class="footer-logo" src="assets/jokismartt-logo-white.png" alt="JOKI SMART" width="244" height="91"></a><small>Excel · Pemrograman · Akuntansi · Proyek teknik</small></div><div class="footer-links"><a href="#layanan">Layanan</a><a href="#pekerjaan">Portofolio</a><a href="#ulasan">Dokumentasi</a><a href="#tanya-jawab">FAQ</a><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/jokismartt23/">Instagram ↗</a></div></div><div class="footer-bottom"><span>© <span id="currentYear">2026</span> Jokismartt.</span><span>Excel · Koding · Akuntansi · Teknik</span><a href="#beranda">Kembali ke atas ↑</a></div></div></footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Pratinjau dokumentasi"><div class="lightbox-inner"><div class="lightbox-head"><div><span class="mono" id="lightboxCategory">DOCUMENTATION</span><h3 id="lightboxTitle">Pratinjau gambar</h3></div><button id="lightboxClose" class="lightbox-close" type="button" aria-label="Tutup gambar">✕</button></div><div class="lightbox-stage"><img id="lightboxImage" alt="Pratinjau dokumentasi yang diperbesar" src="assets/portfolio/p-03.webp"></div><div class="lightbox-bottom"><span>ARSIP JOKISMARTT</span><a id="lightboxDirect" href="assets/portfolio/p-03.webp" target="_blank" rel="noopener noreferrer">Buka gambar asli ↗</a></div></div></dialog>
 </body>
 </html>

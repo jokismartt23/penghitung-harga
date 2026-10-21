@@ -1,39 +1,33 @@
-# JokiSmart PriceDesk
+# JOKI SMART | Website Resmi (Biru-Hijau)
 
-Kalkulator estimasi harga JokiSmart berbentuk **web app / PWA** tanpa database, backend, build tools, atau instalasi dependensi.
+Versi siap unggah ke GitHub / Vercel. HTML + CSS + JavaScript, tanpa database.
 
-## Cara menggunakan
-1. Buka `index.html` (online atau melalui server lokal).
-2. Pilih layanan, tingkat kesulitan, jumlah pekerjaan, dan deadline.
-3. Jika perlu, nyalakan **Estimasi waktu kerja manual** atau masukkan biaya tambahan dan diskon.
-4. Lihat harga rekomendasi, rentang negosiasi, dan DP otomatis.
-5. Gunakan **Salin penawaran harga**, **Simpan riwayat**, atau **Kirim ke WA**.
-6. Buka **Atur Tarif** untuk mengganti tarif dasar JokiSmart sendiri.
+## File dan folder
+- `index.html`: seluruh halaman termasuk logo, layanan, portofolio, dokumentasi, form konsultasi, dan SEO
+- `styles.css`: desain editorial responsif dan transisi halus
+- `app.js`: menu HP, galeri, filter portofolio dan form WhatsApp
+- `assets/jokismartt-logo.png`: logo asli pengguna, versi transparan
+- `assets/jokismartt-logo-white.png`: logo footer di latar gelap
+- `assets/portfolio/`: dokumentasi kerja nyata
+- `assets/testimonials/`: arsip komunikasi dan bukti pembayaran yang sudah disensor pada versi sebelumnya
+- `vercel.json`: konfigurasi hosting Vercel
 
-## Aturan perhitungan
-- `Jam kerja = jam persiapan + (jumlah unit × jam per unit)`, atau jam manual yang dimasukkan.
-- `Biaya pengerjaan = jam kerja × tarif per jam × faktor tingkat kesulitan`.
-- Tingkat kesulitan: Mudah ×0,8; Sedang ×1; Sulit ×1,4; Sangat Sulit ×1,85.
-- Deadline: ≥7 hari ×1; 3–6 hari ×1,08; 2 hari ×1,18; 24 jam ×1,35; 12 jam ×1,55; 6 jam ×1,8.
-- `Penawaran = MAX(minimum order, biaya pengerjaan × faktor deadline + biaya tambahan − diskon)`, dibulatkan ke atas Rp5.000.
-- Rentang negosiasi: 90–118% estimasi (tetap mengikuti minimum order).
-- DP dipilih 30%, 50%, atau 70%, dibulatkan ke atas Rp5.000.
+## Update website yang SUDAH online di Vercel
+1. Ekstrak ZIP ini.
+2. Buka repository GitHub yang terhubung ke project Vercel lama.
+3. Unggah SELURUH ISI folder ini (semua file dan folder `assets`) ke root repository, bukan ZIP-nya dan bukan folder induk tambahan.
+4. GitHub akan memperbarui file di jalur sama. Pilih `Commit changes` pada branch yang digunakan Vercel.
+5. Buka Vercel > Project > Deployments, pastikan deployment terbaru berstatus Ready.
+6. Refresh website dengan Ctrl+F5 agar cache lama dibersihkan.
 
-**Catatan:** Tarif bawaan hanya angka simulasi dan bukan riset harga pasar. Konfirmasi ruang lingkup, berkas input, tingkat kesulitan, revisi, serta ketersediaan tenaga sebelum menetapkan harga final.
+CATATAN: Github tidak otomatis menghapus file lama yang hilang pada revisi, hapus file usang bila perlu. Jangan unggah ZIP sumber asli bukti transfer/testimoni karena berpotensi berisi data pribadi.
 
-## Deploy ke Vercel
-- Ekstrak ZIP ini, lalu unggah **seluruh file beserta folder `icons`** ke GitHub.
-- Vercel → Add New Project → import repository.
-- Framework Preset: **Other**.
-- Root Directory: `./`.
-- Build, Install, Output: **kosong/default**.
-- Klik Deploy.
+## Kontak
+- WhatsApp `082285150571` (`6282285150571`)
+- Instagram `@jokismartt23`
 
-## Pasang aplikasi di HP
-Setelah website terbit menggunakan HTTPS:
-- Chrome Android: menu `⋮` → **Tambahkan ke layar utama / Install app**.
-- Safari iPhone: tombol Share → **Add to Home Screen**.
-
-File tersimpan secara lokal (`localStorage`) di browser pengguna. Tidak ada akun, database, maupun sinkronisasi antardevice. Menghapus data situs/browser dapat menghapus tarif khusus dan riwayat.
-
-**Privasi:** Ini alat admin internal. Jangan memasukkan data rahasia pelanggan atau mempublikasikan alat ini secara terbuka tanpa kontrol akses. PWA serta file statis tidak menyediakan autentikasi keamanan. Jika sudah deploy publik, URL bisa diakses orang lain yang mengetahuinya. `robots noindex` hanya meminta mesin pencari tidak mengindeks dan bukan kontrol akses.
+## Catatan penting
+- Website memakai screenshot yang sudah disiapkan dan disamarkan pada proyek sebelumnya. Tinjau kembali sebelum membuka repository ke publik.
+- Form tidak menyimpan data, hanya membuat pesan WhatsApp di browser pelanggan.
+- Alamat website/domain belum dipatok sehingga tidak mengklaim domain yang belum dimiliki.
+- FAQ dan layanan bisa diperbarui dengan mengedit teks di index.html.
